@@ -6,7 +6,7 @@
 /*   By: achahlao <achahlao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/01 20:17:45 by achahlao          #+#    #+#             */
-/*   Updated: 2025/05/01 20:30:25 by achahlao         ###   ########.fr       */
+/*   Updated: 2025/05/02 00:22:39 by achahlao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ Animal& Animal::operator=(const Animal& obj)
 
  // make Sound()
 
- void Animal::makeSound()
+ void Animal::makeSound() const 
  {
     std::cout << "les chats n’aboient pas" << std::endl;
  }
