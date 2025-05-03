@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Animal.hpp                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: achahlao <achahlao@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/05/03 03:20:14 by achahlao          #+#    #+#             */
+/*   Updated: 2025/05/03 03:20:15 by achahlao         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef ANIMAL_HPP
 # define ANIMAL_HPP
 
@@ -13,7 +25,7 @@ class Animal
         Animal& operator=(const Animal& obj);
         virtual ~Animal();
         
-        virtual void makeSound() const;
+        virtual void makeSound() const = 0;
         virtual std::string getType() const ;
 };
 

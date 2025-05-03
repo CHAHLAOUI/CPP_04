@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: achahlao <achahlao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/03 03:20:10 by achahlao          #+#    #+#             */
-/*   Updated: 2025/05/03 03:20:11 by achahlao         ###   ########.fr       */
+/*   Created: 2025/05/03 03:20:03 by achahlao          #+#    #+#             */
+/*   Updated: 2025/05/03 03:20:04 by achahlao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,14 @@ Animal& Animal::operator=(const Animal& obj)
  }
 
  Animal::~Animal() {}
+
+
+ // make Sound()
+
+ void Animal::makeSound() const 
+ {
+    std::cout << "les chats n’aboient pas" << std::endl;
+ }
  
  std::string Animal::getType() const
  {

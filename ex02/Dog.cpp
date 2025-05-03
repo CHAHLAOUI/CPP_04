@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: achahlao <achahlao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/02 06:58:20 by achahlao          #+#    #+#             */
-/*   Updated: 2025/05/02 19:41:16 by achahlao         ###   ########.fr       */
+/*   Created: 2025/05/03 03:19:47 by achahlao          #+#    #+#             */
+/*   Updated: 2025/05/03 06:47:20 by achahlao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ Dog::~Dog()
     std::cout << "destructor Dog " << std::endl;
 }
 
-void Dog::makeSound() const 
-{
-    std::cout << "Woof\n";
-}
+// void Dog::makeSound() const 
+// {
+//     std::cout << "Haaaaaaaaw\n";
+// }

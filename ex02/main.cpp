@@ -1,29 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   WrongCat.hpp                                       :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: achahlao <achahlao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/03 03:21:21 by achahlao          #+#    #+#             */
-/*   Updated: 2025/05/03 03:21:22 by achahlao         ###   ########.fr       */
+/*   Created: 2025/05/03 03:19:43 by achahlao          #+#    #+#             */
+/*   Updated: 2025/05/03 06:47:14 by achahlao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef WRONGCAT_HPP
-#define WRONGCAT_HPP
+#include "Dog.hpp"
+#include "Cat.hpp"
 
-#include "WrongAnimal.hpp"
+int main()
+{
+    const Animal* dog = new Dog();
+    const Animal* cat = new Cat();
 
-class WrongCat : public WrongAnimal {
+    std::cout << dog->getType() << " says: ";
+    dog->makeSound();
 
-	public:
-		WrongCat();
-		WrongCat(const WrongCat& rhs);
-		WrongCat& operator=(const WrongCat& rhs);
-		~WrongCat();
+    std::cout << cat->getType() << " says: ";
+    cat->makeSound();
 
-		void makeSound() const;
-};
+    delete dog;
+    delete cat;
 
-#endif
+    return 0;
+}

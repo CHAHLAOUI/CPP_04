@@ -5,12 +5,13 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: achahlao <achahlao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/03 03:20:23 by achahlao          #+#    #+#             */
-/*   Updated: 2025/05/03 03:20:24 by achahlao         ###   ########.fr       */
+/*   Created: 2025/05/02 19:04:20 by achahlao          #+#    #+#             */
+/*   Updated: 2025/05/03 02:52:06 by achahlao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Brain.hpp"
+
 
 Brain::Brain()
 {
@@ -19,15 +20,13 @@ Brain::Brain()
         ideas[i] = "idea";
 }
 
-
-
 Brain::Brain(const Brain& obj)
 {
     for (int i = 0; i < 100; i++)
     {
         std::cout << "--------  " << ideas[i] << "----" << obj.ideas[i] << std::endl;
         ideas[i] = obj.ideas[i];
-
+ 
     }
     std::cout << " Copy constructor de Brain" << std::endl;
 }

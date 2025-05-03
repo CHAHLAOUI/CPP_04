@@ -1,31 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Dog.cpp                                            :+:      :+:    :+:   */
+/*   Cat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: achahlao <achahlao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/02 06:58:20 by achahlao          #+#    #+#             */
-/*   Updated: 2025/05/02 19:41:16 by achahlao         ###   ########.fr       */
+/*   Created: 2025/05/02 19:17:41 by achahlao          #+#    #+#             */
+/*   Updated: 2025/05/03 06:44:01 by achahlao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Dog.hpp"
+#include "Cat.hpp"
 
-Dog::Dog()
+Cat::Cat()
 {
-    Type = "Dog";
+    Type = "Cat";
     brain = new Brain();
-    std::cout << "constructor Dog  est appel" << std::endl;
+    std::cout << "constructor de Cat  est appel" << std::endl;
 }
 
-Dog::Dog(const Dog& obj) : Animal(obj)
+Cat::Cat(const Cat& obj) : Animal(obj)
 {
     brain = new Brain(*obj.brain);
-    std::cout << "constructor de copy Dog" << std::endl;
+    std::cout << "Cat copy constructor\n";
 }
 
-Dog& Dog::operator=(const Dog& obj)
+Cat& Cat::operator=(const Cat& obj)
 {
     if (this != &obj)
     {
@@ -33,17 +33,17 @@ Dog& Dog::operator=(const Dog& obj)
         delete brain;
         brain = new Brain(*obj.brain);
     }
-    std::cout << "Dog assignment operator\n";
+    std::cout << "Cat assignment operator\n";
     return (*this);
 }
-
-Dog::~Dog()
+ 
+Cat::~Cat() 
 {
     delete brain;
-    std::cout << "destructor Dog " << std::endl;
+    std::cout << "Cat destructor\n";
 }
-
-void Dog::makeSound() const 
+ 
+void Cat::makeSound() const
 {
-    std::cout << "Woof\n";
+    std::cout << "Miiiiiiw\n";
 }
